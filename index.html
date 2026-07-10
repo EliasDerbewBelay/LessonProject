@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernshop | Botanical Catalog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="A curated catalog of beautiful indoor plants and botanical accessories.">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo-link">
+      <div class="logo-icon"></div>
+      <div class="logo-text">Fernshop</div>
+    </a>
+    <nav class="site-nav">
+      <a href="#">Shop</a>
+      <a href="#">Plant care</a>
+      <a href="#">About</a>
+    </nav>
+    <div class="header-right">
+      <div class="cart-icon" aria-label="Cart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <span class="cart-badge">0</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="filter-bar" aria-label="Product categories">
+      <button class="filter-pill active">All</button>
+      <button class="filter-pill">Indoor plants</button>
+      <button class="filter-pill">Pots & planters</button>
+      <button class="filter-pill">Plant care</button>
+    </section>
+
+    <div class="container">
+      <section class="product-grid" id="productGrid" aria-label="Products">
+        <!-- Products will be dynamically rendered here -->
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-left">
+      &copy; 2026 Fernshop &mdash; built by a student, for a portfolio.
+    </div>
+    <div class="footer-links">
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+
+  <script type="module" src="js/catalog.js"></script>
+</body>
+</html>
