@@ -1,0 +1,156 @@
+/* === Product Detail Page === */
+.product-detail-section {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.detail-image-wrapper {
+  padding: 1rem;
+}
+
+.detail-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detail-header .category {
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.detail-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.review-count {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.price-stock-box {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.price-stock-box .price {
+  color: var(--clay);
+}
+
+.stock-status {
+  font-weight: 500;
+}
+
+.stock-status.in-stock {
+  color: var(--moss);
+}
+
+.stock-status.out-of-stock {
+  color: var(--out-of-stock);
+}
+
+.description {
+  color: var(--forest-soft);
+  line-height: 1.6;
+}
+
+.care-facts {
+  border-top: 1px solid var(--sand);
+  border-bottom: 1px solid var(--sand);
+  padding: 1.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.care-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.care-label {
+  color: var(--muted);
+}
+
+.care-value {
+  color: var(--forest);
+  font-weight: 500;
+}
+
+.btn-add-cart {
+  background-color: var(--moss);
+  color: var(--paper);
+  border: none;
+  padding: 1rem 2rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-add-cart:hover {
+  background-color: var(--forest);
+}
+
+.btn-add-cart:disabled,
+.btn-add-cart[disabled] {
+  background-color: var(--sand);
+  color: var(--muted);
+  cursor: not-allowed;
+}
+
+.seller-info {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+/* Error State */
+.error-state {
+  text-align: center;
+  padding: 8rem 0;
+}
+
+.error-state p {
+  margin: 1rem 0 2rem;
+  color: var(--forest-soft);
+}
+
+.error-state .btn-back {
+  display: inline-block;
+  background-color: var(--moss);
+  color: var(--paper);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .product-detail-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

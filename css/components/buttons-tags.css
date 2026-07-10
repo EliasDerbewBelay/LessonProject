@@ -1,0 +1,69 @@
+/* Basic Links & Lists */
+a {
+  color: var(--moss);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--forest);
+}
+
+ul {
+  list-style: none;
+}
+
+/* === Signature Visual Element: Botanical Specimen Tag === */
+.specimen-tag {
+  border: 1px solid var(--sand);
+  background-color: var(--paper);
+  position: relative;
+}
+
+.specimen-tag::before {
+  content: "";
+  position: absolute;
+  top: -4px; left: -4px; right: -4px; bottom: -4px;
+  background:
+    linear-gradient(var(--sand), var(--sand)) top left / 8px 1px no-repeat,
+    linear-gradient(var(--sand), var(--sand)) top left / 1px 8px no-repeat,
+    linear-gradient(var(--sand), var(--sand)) top right / 8px 1px no-repeat,
+    linear-gradient(var(--sand), var(--sand)) top right / 1px 8px no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.specimen-tag::after {
+  content: "";
+  position: absolute;
+  top: -4px; left: -4px; right: -4px; bottom: -4px;
+  background:
+    linear-gradient(var(--sand), var(--sand)) bottom left / 8px 1px no-repeat,
+    linear-gradient(var(--sand), var(--sand)) bottom left / 1px 8px no-repeat,
+    linear-gradient(var(--sand), var(--sand)) bottom right / 8px 1px no-repeat,
+    linear-gradient(var(--sand), var(--sand)) bottom right / 1px 8px no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Helpers & Buttons */
+.w-full { width: 100%; }
+.center { text-align: center; }
+.btn-shop, .btn-link {
+  display: inline-block;
+  background-color: var(--moss);
+  color: var(--paper);
+  padding: 1rem 2rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+.btn-shop:hover { background-color: var(--forest); color: var(--paper); }
+.btn-link { background: transparent; color: var(--moss); padding: 0; margin-top: 1rem; }
+.btn-link:hover { color: var(--forest); background: transparent; }
+.section-header { margin-bottom: 2rem; }
+.section-header span { display: block; color: var(--muted); margin-bottom: 0.5rem; }
+.section-header h2 { font-size: 2rem; }

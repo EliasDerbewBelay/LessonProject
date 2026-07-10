@@ -1,0 +1,18 @@
+/* === CSS Variables & Resets === */
+:root {
+  --cream: #F6F3EA;
+  --paper: #FFFFFF;
+  --forest: #1F3A2E;
+  --forest-soft: #3C5C49;
+  --moss: #5C7A52;
+  --clay: #B4713B;
+  --sand: #D8D0BC;
+  --muted: #8A8571;
+  --out-of-stock: #A63D2F;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
