@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fernshop | Product Detail</title>
+  <title>Fernshop | Botanical Catalog</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="A curated catalog of beautiful indoor plants and botanical accessories.">
 </head>
 <body>
   <header class="site-header">
@@ -26,8 +27,19 @@
     </div>
   </header>
 
-  <main class="container" id="detailContainer">
-    <!-- Product detail content injected via JS -->
+  <main>
+    <section class="filter-bar" aria-label="Product categories">
+      <button class="filter-pill active">All</button>
+      <button class="filter-pill">Indoor plants</button>
+      <button class="filter-pill">Pots & planters</button>
+      <button class="filter-pill">Plant care</button>
+    </section>
+
+    <div class="container">
+      <section class="product-grid" id="productGrid" aria-label="Products">
+        <!-- Products will be dynamically rendered here -->
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -41,6 +53,6 @@
     </div>
   </footer>
 
-  <script type="module" src="js/detail.js"></script>
+  <script type="module" src="js/catalog.js"></script>
 </body>
 </html>

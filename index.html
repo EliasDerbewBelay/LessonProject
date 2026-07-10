@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fernshop | Botanical Catalog</title>
+  <title>Fernshop | Botanical Living</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="A curated catalog of beautiful indoor plants and botanical accessories.">
+  <meta name="description" content="Fernshop brings the beauty of botanical living to your space.">
 </head>
 <body>
   <header class="site-header">
@@ -14,7 +14,8 @@
       <div class="logo-text">Fernshop</div>
     </a>
     <nav class="site-nav">
-      <a href="#">Shop</a>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
       <a href="#">Plant care</a>
       <a href="#">About</a>
     </nav>
@@ -27,18 +28,101 @@
   </header>
 
   <main>
-    <section class="filter-bar" aria-label="Product categories">
-      <button class="filter-pill active">All</button>
-      <button class="filter-pill">Indoor plants</button>
-      <button class="filter-pill">Pots & planters</button>
-      <button class="filter-pill">Plant care</button>
+    <!-- Hero Section -->
+    <section class="hero-section full-width">
+      <div class="hero-bg">
+        <img src="https://picsum.photos/seed/hero-banner/1600/800" alt="Lush indoor plants" loading="lazy">
+      </div>
+      <div class="hero-overlay container">
+        <div class="hero-card specimen-tag">
+          <span class="specimen-data">EST. 2026</span>
+          <h1>Bring life to your space.</h1>
+          <p>Curated botanical specimens and elegant accessories for the modern home.</p>
+          <a href="shop.html" class="btn-shop">Shop the Collection</a>
+        </div>
+      </div>
     </section>
 
-    <div class="container">
-      <section class="product-grid" id="productGrid" aria-label="Products">
-        <!-- Products will be dynamically rendered here -->
-      </section>
-    </div>
+    <!-- Featured Products -->
+    <section class="featured-section container">
+      <div class="section-header">
+        <span class="specimen-data">Curator's Picks</span>
+        <h2>Featured Specimens</h2>
+      </div>
+      <div class="product-grid" id="featuredProducts">
+        <!-- Injected via js/landing.js -->
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about-section">
+      <div class="container about-layout">
+        <div class="about-image specimen-tag">
+          <img src="https://picsum.photos/seed/about/800/800" alt="Fernshop greenhouse" loading="lazy">
+        </div>
+        <div class="about-text">
+          <h2>Cultivating Beauty</h2>
+          <p>Founded by plant enthusiasts, Fernshop is dedicated to sourcing the highest quality botanical specimens. We believe that plants aren't just decorations—they are living organisms that enrich our spaces and our minds.</p>
+          <a href="#" class="btn-link">Read our story &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonies -->
+    <section class="testimonies-section container">
+      <div class="section-header center">
+        <h2>What Our Growers Say</h2>
+      </div>
+      <div class="testimonies-grid">
+        <div class="testimony-card specimen-tag">
+          <div class="stars">★★★★★</div>
+          <p>"The Monstera arrived in perfect condition. The packaging was meticulous and the plant is absolutely thriving in my living room."</p>
+          <div class="author specimen-data">- Sarah J.</div>
+        </div>
+        <div class="testimony-card specimen-tag">
+          <div class="stars">★★★★★</div>
+          <p>"I love the botanical specimen tags and the attention to detail. This isn't just a plant shop, it's a curated experience."</p>
+          <div class="author specimen-data">- Marcus T.</div>
+        </div>
+        <div class="testimony-card specimen-tag">
+          <div class="stars">★★★★☆</div>
+          <p>"Incredible selection of rare aroids. The premium soil mix is the best I've ever used for my collection."</p>
+          <div class="author specimen-data">- Elena R.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-section container">
+      <div class="contact-layout specimen-tag">
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p>Have questions about plant care or an existing order? Send us a message and our botanical experts will respond promptly.</p>
+          <div class="contact-details">
+            <span class="specimen-data">EMAIL</span>
+            <p>hello@fernshop.example</p>
+            <br>
+            <span class="specimen-data">HOURS</span>
+            <p>Mon-Fri, 9am - 5pm EST</p>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label for="name" class="specimen-data">Name</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="specimen-data">Email</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message" class="specimen-data">Message</label>
+            <textarea id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-shop w-full">Send Message</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -52,6 +136,6 @@
     </div>
   </footer>
 
-  <script type="module" src="js/catalog.js"></script>
+  <script type="module" src="js/landing.js"></script>
 </body>
 </html>
